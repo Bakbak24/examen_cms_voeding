@@ -1,0 +1,107 @@
+fieldLayouts:
+  a80135af-9292-4084-8d8c-7bf1cbc26eff:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 33224eaf-b2f6-4af5-be39-38d9810c658b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d5164fab-374c-4fe1-b6e9-7e0ed6b81dd5 # pizza Image
+            instructions: 'The image that you can insert for your products in the order page.'
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 167588fa-bdb7-40d9-a67f-5a98b46bd543
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ff0b8515-0bfe-4ae7-9776-e80b0879cd8f # Price
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dfcbf026-4d7a-4cfa-b147-b97e06e25d3a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 46ba8f1f-0f8e-4d51-afe2-02d682bd5e48 # Summary text
+            instructions: 'You can write the ingredients of the products in here for example(cheese, pepperoni etc)'
+            label: 'Product ingredienten'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a93bbb25-d0b4-403f-a588-d8810a890145
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b4cb583c-bac1-4793-96e4-1846c474a878 # Summary description
+            instructions: 'Extra info about the product'
+            label: 'Product description'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9b1cbc5f-b205-42a7-9b78-f1c374427bec
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6ff1793b-074e-4d24-8bec-65c958f6b44e # created_at_date_time
+            instructions: 'You need to give the date and time that this entry was made'
+            label: 'Made at'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a45a972f-945c-449a-b5da-2a65ea959361
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 589c27c9-a199-43b8-bd23-253ff6b89dcb
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 001ec7fa-b735-4695-9fe4-05abc961c1f3 # Order Product
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

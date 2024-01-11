@@ -1,0 +1,119 @@
+dateModified: 1704998356
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:d93fc670-a210-4ce1-9b6c-0e903b222d24'
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+        - 'field:d5164fab-374c-4fe1-b6e9-7e0ed6b81dd5' # pizza Image
+      type: native
+email:
+  fromEmail: zakabak3@gmail.com
+  fromName: nbek.com
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: '/usr/sbin/sendmail -bs'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  imageassets:
+    hasUrls: false
+    name: ImageAssets
+    settings:
+      path: '@web'
+    type: craft\fs\Local
+    url: null
+  pizzas:
+    hasUrls: true
+    name: Pizzas
+    settings:
+      path: '@webroot/images/uploads/pizzas'
+    type: craft\fs\Local
+    url: '@web/images/uploads/pizzas'
+meta:
+  __names__:
+    0a8373d0-8d07-4ee4-8531-c72036c5807a: 'Rich Text' # Rich Text
+    001ec7fa-b735-4695-9fe4-05abc961c1f3: 'Order Product' # Order Product
+    3b003a23-71d2-4f7c-8f74-1e3756dd3806: Contactpage # Contactpage
+    6ff1793b-074e-4d24-8bec-65c958f6b44e: created_at_date_time # created_at_date_time
+    8a5cf7ca-05c4-45e4-b8f3-4d82f9378fe6: 'Facebook Link' # Facebook Link
+    30b07609-4c08-496c-939b-746a41d642c7: nbek.com # nbek.com
+    30bd3a72-5074-4398-ac94-c715ef899f16: frameLink # frameLink
+    46ba8f1f-0f8e-4d51-afe2-02d682bd5e48: 'Summary text' # Summary text
+    76e8e255-bf1e-4439-8a48-cc7cb872ea74: Homepage # Homepage
+    0634c691-f15a-4cdc-96ea-d3bacfad7546: Global # Global
+    77746331-25ae-4b34-b316-7ac18f62049f: Homepage # Homepage
+    a95313a6-40d9-4fcb-908f-ddf30040bd26: Pizzas # Pizzas
+    abb71de2-1245-4c62-9081-ad63d28de3e3: '172x118 Thumb' # 172x118 Thumb
+    b4cb583c-bac1-4793-96e4-1846c474a878: 'Summary description' # Summary description
+    bc5d5748-bc65-4a8e-ac0a-23607288abaa: Common # Common
+    d5164fab-374c-4fe1-b6e9-7e0ed6b81dd5: 'pizza Image' # pizza Image
+    e2ca4d7d-8831-44c6-89f7-2f3a8b629b9c: nbek.com # nbek.com
+    e665a134-27c5-4933-85a3-2f700ff50c9a: Contactpage # Contactpage
+    f0ae81b9-4e41-4126-b859-1468191b1a41: 'Instagram Link' # Instagram Link
+    fd93e96d-61c9-4758-9881-2c3e6867e9c7: Default # Default
+    ff0b8515-0bfe-4ae7-9776-e80b0879cd8f: Price # Price
+plugins:
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  oembed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  simplemap:
+    edition: lite
+    enabled: true
+    schemaVersion: 3.4.2
+    settings:
+      apiKey: null
+      browserApiKey: null
+      disablePopulateMissingFieldData: false
+      geoLocationAutoRedirect: false
+      geoLocationCacheDuration: 5184000
+      geoLocationService: none
+      geoLocationToken: ''
+      geoService: nominatim
+      geoToken: ''
+      mapTiles: carto.rastertiles/voyager
+      mapToken: ''
+      serverApiKey: null
+      unrestrictedApiKey: null
+      w3wEnabled: false
+      w3wToken: ''
+  social-share:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: nbek.com
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

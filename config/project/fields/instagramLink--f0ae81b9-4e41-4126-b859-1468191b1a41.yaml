@@ -1,0 +1,14 @@
+columnSuffix: vhmtiowg
+contentColumnType: string(255)
+fieldGroup: 0634c691-f15a-4cdc-96ea-d3bacfad7546 # Global
+handle: instagramLink
+instructions: null
+name: 'Instagram Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

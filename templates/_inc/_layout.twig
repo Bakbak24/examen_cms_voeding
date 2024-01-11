@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Pizzaria Papizza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+     {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
+    {% do craft.app.view.registerCssFile('@web/styles/style.css') %}
+</head>
+<body >
+<div id="container">
+<header>
+    <div class="logo">
+       {% set logoImage = craft.assets.filename('lgo.svg').one() %}
+        <a href="{{siteUrl}}"><img src="{{ logoImage.getUrl() }}" alt="Pizzaria Papizza"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{{siteUrl}}">Home</a></li>
+            <li><a href="{{ siteUrl('contact-page') }}">Contact</a></li>
+            <li><a href="{{ siteUrl('orderPage') }}" id="ord">ORDER NOW</a></li>
+        </ul>
+    </nav>
+    </header>
+{% block content %}
+
+{% endblock %}
+   <footer>
+    <p>© 2024 Pizzaria Papizza. All Rights Reserved. - Rayen Chebbai</p>
+    </footer>
+</div>
+</body>
+</html>

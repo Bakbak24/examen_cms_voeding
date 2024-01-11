@@ -1,0 +1,54 @@
+
+{% extends '_inc/_layout' %}
+{% block content %}
+    <div class="main-content">
+    <div id="contact-contnt">
+    <div id="contact-info">
+    {{ entry.richText }}
+    
+{{ craft.socialShare.renderShareButton('facebook', {
+    url:  entry.facebookLink ,
+    buttonAttributes: {
+        style: {
+            '--size': '35px',
+            '--border-radius': '5px',
+            '--gap': '-1px',
+            
+        },
+    },
+    theme: {
+        showIcon: true,
+        showLabel: false,
+        shape: 'rounded',
+    },
+    text: 'Hallo alles goed',
+    params: {    
+        image: '../images/margerita.jpg',
+    },
+}) }}
+
+
+{{ craft.socialShare.renderButton('instagram', {
+    url: entry.instagramLink,
+     buttonAttributes: {
+        style: {
+            '--size': '35px',
+            '--border-radius': '5px',
+            '--gap': '-1px',
+            
+        },
+    },
+    theme: {
+        showIcon: true,
+        showLabel: false,
+        shape: 'rounded',
+    },
+}) }}
+    </div>
+    <div id="contact-map">
+    <iframe id="map-style" src="{{ entry.framelink}}"></iframe>
+    </div>
+    
+    </div>
+   </div>
+{% endblock %}

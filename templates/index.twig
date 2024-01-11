@@ -1,0 +1,18 @@
+{% extends '_inc/_layout' %}
+{% block content %}
+	<div id="content">
+		<div class="content-details">
+			{{ entry.richText }}
+			<button id="order-btn">ORDER NOW</button>
+		</div>
+	</div>
+	 <script>
+	document.addEventListener("DOMContentLoaded", function() {
+	    var orderButton = document.getElementById("order-btn");
+	
+	    orderButton.addEventListener("click", function() {
+	        window.location.href = "{{ siteUrl('orderPage') }}";
+	    });
+	});
+	</script>
+{% endblock %}

@@ -1,0 +1,14 @@
+columnSuffix: lnjipiax
+contentColumnType: string(255)
+fieldGroup: 0634c691-f15a-4cdc-96ea-d3bacfad7546 # Global
+handle: facebookLink
+instructions: 'Paste a facebook link in here that you wanna share'
+name: 'Facebook Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

@@ -1,0 +1,14 @@
+columnSuffix: rsuyfine
+contentColumnType: string(600)
+fieldGroup: 0634c691-f15a-4cdc-96ea-d3bacfad7546 # Global
+handle: framelink
+instructions: 'To paste url links and use it later in the twig files'
+name: frameLink
+searchable: false
+settings:
+  maxLength: 600
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

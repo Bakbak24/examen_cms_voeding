@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: orderProduct
+name: 'Order Product'
+propagationMethod: all
+siteSettings:
+  30b07609-4c08-496c-939b-746a41d642c7: # nbek.com
+    enabledByDefault: true
+    hasUrls: true
+    template: product/_entry
+    uriFormat: 'order-pizza-product/{slug}'
+type: channel

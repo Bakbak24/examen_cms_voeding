@@ -1,0 +1,58 @@
+{% extends '_inc/_layout' %}
+{% block content %}
+	<div class="main-content">
+		<div class="order-content">
+			<div class="search-filter">
+				<form action="/orderPage" method="get" id="search-form">
+					<button type="submit">⌕</button>
+					<input type="text" id="search" name="search" placeholder="Search...">
+				</form>
+				<form action="/orderPage" method="get" id="sort">
+					<label for="sort">Sort by</label>
+					<select id="sort" name="sort">
+						<option value="Choose">Cheap or Expensive</option>
+						<option value="asc">Cheap</option>
+						<option value="desc">Expensive</option>
+					</select>
+					<button type="submit" id="btn">Sort</button>
+				</form>
+			</div>
+			{% set searchQuery = craft.app.request.getParam('search') %}
+			{% set orderBy = craft.app.request.getParam('sort') %}
+			{% if searchQuery is not empty %}
+				{% set pizzaProducts = craft.entries.section('orderProduct').search(searchQuery).all() %}
+			{% elseif orderBy == 'asc' %}
+				{% set pizzaProducts = craft.entries.section('orderProduct').orderBy('price asc').limit(3).all() %}
+			{% else %}
+				{% set pizzaProducts = craft.entries.section('orderProduct').orderBy('price desc').limit(3).all() %}
+			{% endif %}
+			{% for pizzaProduct in pizzaProducts %}
+				<div class="pizza-content">
+					<div class="pizza-image">
+						{% set pizzaImage = pizzaProduct.pizzaimage.one() %}
+						<img src="{{ pizzaImage.getUrl() }}" alt="{{ pizzaImage.title }}">
+					</div>
+					<div class="pizza-info">
+						<div>
+							<h3>{{ pizzaProduct.title }}</h3>
+							<p>{{ pizzaProduct.summaryText }}</p>
+						</div>
+						<button type="button" class="pizza-btn" data-url="{{ pizzaProduct.url }}">+&nbsp;{{ pizzaProduct.price | money }}</button>
+					</div>
+				</div>
+			{% endfor %}
+			 <script>
+			            document.addEventListener("DOMContentLoaded", function() {
+			                var pizzaButtons = document.querySelectorAll(".pizza-btn");
+			
+			                pizzaButtons.forEach(function(button) {
+			                    button.addEventListener("click", function() {
+			                        var productUrl = this.getAttribute("data-url");
+			                        window.location.href = productUrl;
+			                    });
+			                });
+			            });
+			        </script>
+		</div>
+	</div>
+{% endblock %}

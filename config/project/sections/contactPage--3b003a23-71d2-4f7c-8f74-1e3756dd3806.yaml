@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: contactPage
+name: Contactpage
+propagationMethod: all
+siteSettings:
+  30b07609-4c08-496c-939b-746a41d642c7: # nbek.com
+    enabledByDefault: true
+    hasUrls: true
+    template: contactPage.twig
+    uriFormat: contact-page
+type: single

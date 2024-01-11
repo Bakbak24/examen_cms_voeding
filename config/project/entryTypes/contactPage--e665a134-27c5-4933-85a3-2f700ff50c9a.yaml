@@ -1,0 +1,95 @@
+fieldLayouts:
+  2f5e57a2-176f-481d-91b5-e34a4e261f4a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 97945eb5-f27f-43e0-9101-b2ecf3335493
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0a8373d0-8d07-4ee4-8531-c72036c5807a # Rich Text
+            instructions: 'All the content of the contact page'
+            label: 'Contact Content'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3497c33a-9ee9-4065-86b3-8b17c65e17b7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 30bd3a72-5074-4398-ac94-c715ef899f16 # frameLink
+            instructions: null
+            label: 'Google map link'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08edb0e6-c408-4bca-9cd7-79fc2fcfd40a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f0ae81b9-4e41-4126-b859-1468191b1a41 # Instagram Link
+            instructions: 'The link to surf to the pizza website in instagram'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19f40407-261b-4c5f-a02b-717b49bfb424
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8a5cf7ca-05c4-45e4-b8f3-4d82f9378fe6 # Facebook Link
+            instructions: 'The link to share the pizza website in facebook'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ebd77f3-17bb-4e48-938c-c38a00508414
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Contactpage Content'
+        uid: 3fc4fbbc-8940-4e5e-9b31-8978d2a109be
+        userCondition: null
+handle: contactPage
+hasTitleField: false
+name: Contactpage
+section: 3b003a23-71d2-4f7c-8f74-1e3756dd3806 # Contactpage
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

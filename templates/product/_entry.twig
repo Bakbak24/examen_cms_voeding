@@ -1,0 +1,29 @@
+{% extends '_inc/_layout' %}
+{% block content %}
+	<div class="main-content">
+		<div class="product-content">
+			<div class="product-image">
+				{% set pizzaImage = entry.pizzaimage.one() %}
+				<img src="{{ pizzaImage.getUrl() }}" alt="product">
+			</div>
+			<div class="product-details">
+				<h1>{{ entry.title }}</h1>
+				<p>{{ entry.summaryText}}</p>
+				<div id="descripton">
+					<b>Description:</b>
+					<p>{{ entry.summaryDescription }}</p>
+				</div>
+				<label for="choose-crust" id="lb">Choose:</label>
+				<select name="choice-crust" id="choose-crust">
+					<option value="classic">Classic Pizza Bodem</option>
+					<option value="thin">Thin Crust Bodem</option>	
+					<option value="cheesy">Cheesy Crust Bodem</option>
+				</select>
+				<p class="price">{{ entry.price | money }}</p>
+				<div class="button-container">
+					<button class="btn-order-pz">Order Now</button>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

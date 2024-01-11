@@ -1,0 +1,44 @@
+fieldLayouts:
+  bf294875-a91c-43d8-8857-3b8430ef503f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: df0d2268-f4dd-49b0-aaf9-4cedae97d4cd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 817be5b8-099c-4c92-8c8f-491d7649de4e
+        userCondition: null
+fs: pizzas
+handle: pizzas
+name: Pizzas
+sortOrder: 1
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

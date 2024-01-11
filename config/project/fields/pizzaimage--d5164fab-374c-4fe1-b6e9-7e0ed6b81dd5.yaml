@@ -1,0 +1,38 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 0634c691-f15a-4cdc-96ea-d3bacfad7546 # Global
+handle: pizzaimage
+instructions: 'Paste images in here'
+name: 'pizza Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:a95313a6-40d9-4fcb-908f-ddf30040bd26' # Pizzas
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 9
+  minRelations: 1
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:a95313a6-40d9-4fcb-908f-ddf30040bd26' # Pizzas
+  restrictedLocationSubpath: null
+  selectionLabel: 'Add a pizza image'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:a95313a6-40d9-4fcb-908f-ddf30040bd26' # Pizzas
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets
